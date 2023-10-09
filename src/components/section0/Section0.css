@@ -1,19 +1,38 @@
-.section0-bg {
+.container0 {
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url('./img/Hue_Saturation_5_1.png');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 0;
+  padding-top: 46%; /* (img-height / img-width * container-width) */
+  /* (853 / 1280 * 100) */
   position: relative;
-  z-index: 0;
 }
 
-.section0-bg-img {
+.flex-parent0 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 2;
+  top: 0;
   width: 100%;
-  object-fit: cover;
-  object-position: top;
+  height: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.mafia-сostume-img0 {
+  height: 100%;
 }
 
 .section0-gradient-1 {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
   z-index: 1;
   background: linear-gradient(
     to left,
@@ -24,86 +43,76 @@
     90%,
     rgb(0 0 0)
   );
-}
-
-.mafia-сostume-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* overflow: auto; */
-  align-items: stretch;
-  background-color: #f0e11a;
-
-}
-
-.mafia-costume {
-  /* max-height: 100%; */
-  /* width: auto; */
-  /* flex-basis: auto; */
-  background-color: #8b4444;
-  margin: 5px;
-  flex-grow: 1;
-}
-
-.mafia-costume2 {
-  /* height: 100%; */
-  /* width: auto; */
-  /* flex-basis: auto; */
-  flex: 1 1 30%;
-
-  background-color: #167c1b;
-}
-
-.mafia-costume2 {
-  /* height: 100%; */
-  /* width: auto; */
-  /* flex-basis: auto; */
-  flex: 1 1 30%;
-
-  background-color: #3936d4;
-}
-
-
-.mafia-сostume-img {
-  max-height: 100%;
-  display: block;
-  flex-basis: auto;
-  /* flex-shrink: 1; */
-  /* object-fit: cover;
-  object-position: top; */
+  mix-blend-mode: multiply;
 }
 
 .section0-gradient-2 {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
   z-index: 3;
   background: linear-gradient(
     to top,
-    rgb(0 0 0 / 0.9),
+    rgb(0 0 0 ),
     10%,
     rgb(255 255 255 / 0) 25%,
     rgb(255 255 255 / 0) 70%,
     90%,
     rgb(0 0 0 / 0)
   );
+  mix-blend-mode: multiply;
 }
 
-.glow {
-  max-width: 100%;
-  max-height: 100%;
+.glow0 {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0;
   z-index: 4;
-  opacity: 0.3;
+  mix-blend-mode: screen;
+  background-image: url('./img/glow-1.png');
+  background-position: 30% 100%;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+
 }
 
-.logo {
-  height: auto;
-  flex-basis: 100px;
-  flex-shrink: 3;
+.section0-text {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
 }
 
+.title0 {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subtitle0 {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo0 {
+  position: absolute;
+  top: 0;
+  left: 50%; 
+  transform: translate(-50%, 0);
+  max-width: 20%;
+  z-index: 7;
+}
